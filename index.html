@@ -23,17 +23,19 @@
       }
 
       .txt {
-        max-width: 600px;
+        max-width: 400px;
         display: inline-block;
         line-height: 25px;
-        text-align: justify;
+        text-align: center;
       }
-
+      
       img {
-        width: 400px;
-        position: absolute;
-        top: 100px;
-        left: 30%;
+        width: 300px;
+        transition: .5s ease;
+      }
+      
+      img:hover {
+        opacity: 0.7;
       }
 
       @keyframes slide {
@@ -53,12 +55,13 @@
         font-size: 20;
         position: sticky;
         top: 20px;
-/*         font-family: "Courier", sans-serif; */
+        /*         font-family: "Courier", sans-serif; */
         text-align: end;
         background-color: rgba(255, 255, 255, 0.65);
         line-height: 40px;
         text-shadow: 0px 0px 20px white;
       }
+
       a {
         color: gray;
         text-decoration: none;
@@ -66,6 +69,16 @@
 
       a:hover {
         text-decoration: underline;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .column {
+        flex: 50%;
+        padding-left: 40px;
+        padding-right: 40px;
       }
     </style>
   </head>
@@ -79,8 +92,40 @@
     <h1>
       Works
     </h1>
-    
     <div class="txt">
+      A working list of my projects, sketches, and other pieces
+      of creation (a linked list in a literal way, not the
+      compsci data structure) in no particular order
     </div>
+    <br><br><br><br>
+    <div class="row">
+      <div class="column">
+        <a href="https://takaramarina.github.io/folklore/">
+        <img src="portrait.JPG" alt="portrait"> <br>
+        A quick archive of my progression on two dimensional
+    pieces, mostly drawings and paintings</a></div>
+      <div class="column"><br><a href="https://takaramarina.github.io/foghouse/">
+        <img src="house.jpeg" alt="fog house"> <br>
+        <br>Installation on privacy
+        in the digital age, December 2022</a></div>
+    </div>
+    <br><br><br><br>
+    <div class="row">
+      <div class="column">
+        <a href="https://takaramarina.github.io/what/">
+          <img src="wotakoi.png" alt="anime"><br>
+        <br>Site of all the anime I've watched, graded and ranked
+        </a></div>
+      <div class="column">
+        <a href="https://netnet.studio/?gh=takaramarina/css-still-life/main">
+          <img src="css.png" alt="css"><br>
+        <br>Still life of Bustelo can
+          done in pure CSS (code attached)
+          (I didn't do this out of my free will,
+          I'm not that crazy)
+        </a>
+      </div>
+    </div>
+    
   </body>
 </html>
